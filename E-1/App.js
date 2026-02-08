@@ -132,14 +132,18 @@ root.render(parent);
  *
  * ReactElement(Object) => HTML(Browser Understands)
  */
-
+ import React from "react";
+ import ReactDOM from "react-dom/client"
+ 
 const child1 = React.createElement("div", { id: "child1" }, [
-  React.createElement("h1", {}, "I am an h1 tag"),
-  React.createElement("h2", {}, "I am an h2 tag"),
+  React.createElement("h1", {id: "child1.1" }, "I am an h1 tag"),
+  React.createElement("h2", {id: "child1.2" }, "I am an h2 tag"),
 ]);
+
+
 const child2 = React.createElement("div", { id: "child2" }, [
-  React.createElement("h1", {}, "I am an h1 tag"),
-  React.createElement("h2", {}, "I am an h2 tag"),
+  React.createElement("h1", { id: "child2.1"}, "I am an h1 tag"),
+  React.createElement("h2", { id: "child2.2"}, "I am an h2 tag"),
 ]);
 
 const parent = React.createElement(
