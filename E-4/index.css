@@ -1,0 +1,42 @@
+#root {
+  background-color:azure;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;     /* FIX: vertical centering */
+  padding: 20px;
+  background-color: darkgrey;
+}
+
+/* NAV LIST */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;              /* FIX: remove default margin */
+  padding: 0;             /* FIX: remove default padding */
+  gap: 20px;              /* FIX: better spacing control */
+}
+
+li {
+  font-size: 22px;
+  cursor: pointer;        /* UX improvement */
+}
+
+/* RESTAURANT CARD CONTAINER */
+.rs-c {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;              /* FIX: spacing between cards */
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.Rest-Container {
+  padding: 20px;
+}
+.Rest-Container:hover {
+  border: 4px solid black;
+}
