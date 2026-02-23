@@ -83,6 +83,7 @@ li:hover {
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 24px;
   padding: 30px;
+  
 }
 
 /* CARD CONTAINER */
@@ -144,4 +145,9 @@ li:hover {
 .Rest-Container h4:last-child {
   font-weight: 600;
   color: #16a34a;
+}
+
+button{
+  padding: 5px;
+  margin: 5px;
 }
